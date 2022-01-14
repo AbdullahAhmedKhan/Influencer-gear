@@ -211,61 +211,6 @@ footer p{
 ======== Media quiry ========
 ==============================*/
 
-/* Tab View */
-
-@media (max-width:824px) {
-    .header-title{
-        font-size: 25px;
-    }
-    .navigation ul li a{
-        padding: 0 4px;
-        font-size: 14px;
-    }
-    .navigation ul li a i{
-        font-size: 14px;
-    }
-    .banner{
-        flex-direction: column;
-        width: 80%;
-        align-items: center;
-    }
-    .banner-left{
-        order: 2;
-        width: 100%;
-    }
-    .banner-right{
-        width: 100%;
-        order: 1;
-        margin-bottom: 50px;
-    }
-    .banner-left p{
-        font-size: 15px;
-        margin-bottom: 20px;
-        width: 80%;
-    }
-    .products{
-        grid-template-columns: repeat(2,1fr);  
-    }
-    .product{
-        padding: 12px;
-        width: 87%;
-    }
-    .product-name{
-        font-size: 24px;
-    }
-    .product-details .product-price{
-        font-size: 20px;
-    }
-    .container .see-more{
-        text-align: center;
-    }
-    .payment-left h1{
-        font-size: 40px;
-    }
-    .payment-right i{
-        font-size: 40px;
-    }
-}
 
 /* Mobile View */
 
@@ -350,5 +295,61 @@ footer p{
         padding:8px;
         border-radius: 15px;
         margin: 5px;
+    }
+}
+
+/* Tab View */
+
+@media (max-width:824px) {
+    .header-title{
+        font-size: 25px;
+    }
+    .navigation ul li a{
+        padding: 0 4px;
+        font-size: 14px;
+    }
+    .navigation ul li a i{
+        font-size: 14px;
+    }
+    .banner{
+        flex-direction: column;
+        width: 80%;
+        align-items: center;
+    }
+    .banner-left{
+        order: 2;
+        width: 100%;
+    }
+    .banner-right{
+        width: 100%;
+        order: 1;
+        margin-bottom: 50px;
+    }
+    .banner-left p{
+        font-size: 15px;
+        margin-bottom: 20px;
+        width: 80%;
+    }
+    .products{
+        grid-template-columns: repeat(2,1fr);  
+    }
+    .product{
+        padding: 12px;
+        width: 87%;
+    }
+    .product-name{
+        font-size: 24px;
+    }
+    .product-details .product-price{
+        font-size: 20px;
+    }
+    .container .see-more{
+        text-align: center;
+    }
+    .payment-left h1{
+        font-size: 40px;
+    }
+    .payment-right i{
+        font-size: 40px;
     }
 }
