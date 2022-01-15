@@ -322,7 +322,7 @@ footer p{
 /* Tab View */
 @media only screen and (min-width: 688px) and (max-width: 992px) {
     .container{
-        padding: 50px 50px;
+        padding: 50px 25px;
     }
     .header-title{
         font-size: 25px;
@@ -342,6 +342,9 @@ footer p{
     .banner-left{
         order: 2;
         width: 100%;
+    }
+    .banner-left h1{
+        font-size: 40px;
     }
     .banner-right{
         width: 100%;
