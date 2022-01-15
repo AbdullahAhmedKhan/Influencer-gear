@@ -302,6 +302,9 @@ footer p{
     .banner-left h1{
         font-size: 35px;
     }
+    .companies{
+        max-width: 500px;
+    }
     .company{
         grid-template-columns: repeat(3,1fr);
         row-gap: 30px;
@@ -394,6 +397,9 @@ footer p{
         font-size: 15px;
         margin-bottom: 20px;
         width: 80%;
+    }
+    .companies{
+        max-width: 700px;
     }
     .company{
         grid-template-columns: repeat(4,1fr);
