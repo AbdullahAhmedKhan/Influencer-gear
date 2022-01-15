@@ -303,11 +303,14 @@ footer p{
         font-size: 35px;
     }
     .companies{
-        max-width: 500px;
+        max-width: 360px;
     }
     .company{
         grid-template-columns: repeat(3,1fr);
         row-gap: 30px;
+    }
+    .company img{
+        width: 70%;
     }
     .products{
         grid-template-columns: 1fr;
