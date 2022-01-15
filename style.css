@@ -1,7 +1,6 @@
 /* Google Font */
 @import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
 *{
-    margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Nunito', sans-serif;
@@ -148,10 +147,9 @@
     display: flex;
     width: 100%;
     justify-content: space-between;
-    align-items: center;
     background-color: #3E8E7E;
-    padding: 100px;
     align-items: center;
+    padding: 50px;
 }
 .payment-left{
     padding: 50px;
@@ -176,32 +174,33 @@
 footer{
     display: flex;
     flex-direction: column;
-    background-color: #000;
+    background-color: rgb(4, 0, 26);
     color: #fff;
     padding: 50px;
     justify-content: center;
     align-items: center;
 }
 footer h2{
+    margin: 5px 0;
     font-size: 24px;
-    padding: 10px 0;
+    padding: 5px 0;
 }
 footer p{
     font-size: 14px;
     color: #D9DBE1;
-    
+    margin: 5px;
 }
 .footer-icon i{
     font-size: 32px;
 }
 .footer-icon{
     display: flex;
-    margin-top: 20px;
+    margin-top: 10px;
 }
 .footer-icon .icon{
     width: 50px;
     height: 50px;
-    background-color: rgba(0, 0, 0, 0.277);
+    background-color: rgba(155, 109, 109, 0.277);
     padding:10px;
     border-radius: 25px;
     margin: 5px;
@@ -214,12 +213,17 @@ footer p{
 
 /* Mobile View */
 
-@media(max-width:414px){
+@media only screen and (max-width: 687px){
     .container{
-        padding: 40px 10px;
+        padding: 20px 10px;
+    }
+    .header-container{
+        padding: 10px;
+        flex-direction: column;
+        align-items: center;
     }
     .header-title{
-        font-size: 18px;
+        font-size: 20px;
     }
     .navigation ul li a{
         padding: 0 2px;
@@ -233,35 +237,51 @@ footer p{
         justify-content: space-between;
         padding: 0px;
     }
-    .container{
-        padding: 30px 12px;
-    }
     .banner{
         flex-direction: column;
         width: 90%;
         align-items: center;
+        padding: 0px;
+        margin: 0 auto;
     }
     .banner-left{
         width: 100%;
+        order: 2;
+        text-align: center;
     }
     .banner-right{
         width: 100%;
         order: 1;
         margin-bottom: 30px;
+        background-size:cover ;
+        background-position: center;
     }
     .banner-right img{
-        width: 100%;
+        width: 80%;
     }
     .banner-left p{
         font-size: 12px;
         margin-bottom: 30px;
-        width: 80%;
+        width: 100%;
     }
     .banner-left h1{
         font-size: 35px;
     }
     .products{
         grid-template-columns: 1fr;
+    }
+    .product{
+        width:95%;
+    }
+    .product-price{
+        font-weight: 900;
+    }
+
+    .container .see-more{
+        margin: 20px 0;
+    }
+    .container .see-more i{
+        margin: 0 2px;
     }
     .payment{
         flex-direction: column;
@@ -298,9 +318,12 @@ footer p{
     }
 }
 
-/* Tab View */
 
-@media (max-width:824px) {
+/* Tab View */
+@media only screen and (min-width: 688px) and (max-width: 992px) {
+    .container{
+        padding: 50px 50px;
+    }
     .header-title{
         font-size: 25px;
     }
@@ -335,7 +358,7 @@ footer p{
     }
     .product{
         padding: 12px;
-        width: 87%;
+        width: 90%;
     }
     .product-name{
         font-size: 24px;
@@ -351,5 +374,9 @@ footer p{
     }
     .payment-right i{
         font-size: 40px;
+    }
+    .container .see-more{
+        margin: 20px 0;
+        text-align: right;
     }
 }
