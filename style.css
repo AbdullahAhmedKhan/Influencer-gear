@@ -6,6 +6,9 @@
     box-sizing: border-box;
     font-family: 'Nunito', sans-serif;
 }
+html{
+    scroll-behavior: smooth;
+  }
 .container{
     max-width: 1366px;
     margin:0 auto;
@@ -14,6 +17,9 @@
 .half-width{
     width: 50%;
 }
+
+/* Header  */
+
 .header-title{
     font-size: 30px;
     font-weight: 900;
@@ -43,10 +49,14 @@
     color: #000;
     font-weight: 900;
 }
+
+/* Banner */
+
 .banner{
     display: flex;
     margin-top: 50px;
     padding: 50px;
+    
 }
 .banner-left{
     width: 60%;
@@ -73,10 +83,18 @@
 .button-link:hover{
     background-color: #205b4f;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    cursor: pointer;
+    background-color: #2448411b;
+    border: 1px solid #205b4f;
+    color: #205b4f;
+    font-weight: 900;
 }
 .banner-left .button-link .arrow{
     color: #fff;
     margin-left: 5px;
+}
+.button-link:hover > #arrow{
+    color: #205b4f;
 }
 .banner-right{
     background-image: url(images/Circle\ design.svg);
@@ -86,6 +104,23 @@
 .banner-right img:hover{
     transform: scale(110%);
     transition: 0.4s ease-in-out;
+}
+
+/* Companies */
+
+.companies{
+    margin: 50px auto;
+    display: flex;
+    max-width: 1200px;
+    border-top: 3px solid rgba(7, 7, 7, 0.03);
+    border-bottom: 3px solid rgba(7, 7, 7, 0.03);
+}
+.company{
+    display: grid;
+    grid-template-columns: repeat(7,1fr);
+}
+.company img{
+    margin: 0 30px;
 }
 /* Products Section */
 
@@ -148,16 +183,15 @@
     display: flex;
     width: 100%;
     justify-content: space-between;
-    background-color: #3E8E7E;
+    background-color: #c2dad556;
     align-items: center;
-    padding: 50px;
+    padding: 120px 50px;
 }
 .payment-left{
     padding: 50px;
 }
 .payment-left h1{
     font-size: 50px;
-    color: #fff;
 }
 .payment-right{
     display: grid;
@@ -167,7 +201,6 @@
 }
 .payment-right i{
     font-size: 50px;
-    color:#ffffff;
 }
 
 /* Footer */
@@ -197,6 +230,7 @@ footer p{
 .footer-icon{
     display: flex;
     margin-top: 10px;
+    cursor: pointer;
 }
 .footer-icon .icon{
     width: 50px;
@@ -267,6 +301,10 @@ footer p{
     }
     .banner-left h1{
         font-size: 35px;
+    }
+    .company{
+        grid-template-columns: repeat(3,1fr);
+        row-gap: 30px;
     }
     .products{
         grid-template-columns: 1fr;
@@ -356,6 +394,10 @@ footer p{
         font-size: 15px;
         margin-bottom: 20px;
         width: 80%;
+    }
+    .company{
+        grid-template-columns: repeat(4,1fr);
+        row-gap: 30px;
     }
     .products{
         grid-template-columns: repeat(2,1fr);  
