@@ -310,7 +310,7 @@ footer p{
         row-gap: 30px;
     }
     .company img{
-        width: 70%;
+        width: 50%;
     }
     .products{
         grid-template-columns: 1fr;
